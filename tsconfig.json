@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "module": "esnext",
+        "target": "ESNext",
+        "module": "ESNext",
         "outDir": "./out",
         "strict": true,
         "esModuleInterop": true,

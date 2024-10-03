@@ -3,13 +3,16 @@ async function importFromScript(what) {
     return module[what];
 }
 
+const getContext = await importFromScript('getContext');
+
 jQuery(async () => {
-    const getContext = await importFromScript('getContext');
     try {
-        console.log('FUUUUUUUUCK!!!')
+        console.log('FUUUUUUUCK!!!')
         console.log('[SANDBOX]: Extensions loaded!');
         console.log('[SANDBOX]: Context...', getContext());
     } catch (error) {
         console.error('[SANDBOX] ERROR:', error);
     }
 });
+
+export {};
