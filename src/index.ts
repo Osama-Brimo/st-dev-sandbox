@@ -6,6 +6,7 @@ async function importFromScript(what) {
 jQuery(async () => {
     const getContext = await importFromScript('getContext');
     try {
+        console.log('FUUUUUUUUCK!!!')
         console.log('[SANDBOX]: Extensions loaded!');
         console.log('[SANDBOX]: Context...', getContext());
     } catch (error) {
