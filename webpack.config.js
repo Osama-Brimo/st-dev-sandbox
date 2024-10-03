@@ -1,15 +1,13 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
-const extensionConfig = {
+const module.exports = {
     devtool: false,
     target: 'node',
-    entry: path.join(__dirname, 'src/index.ts'),
+    entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        libraryTarget: 'commonjs',
-        libraryExport: 'default',
     },
     resolve: {
         extensions: ['.ts', '.js'],
@@ -37,5 +35,3 @@ const extensionConfig = {
     },
     plugins: [],
 };
-
-module.exports = [extensionConfig];
