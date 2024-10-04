@@ -2,7 +2,7 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    devtool: 'eval-source-map',
+    devtool: false,
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -49,23 +49,23 @@ module.exports = {
             },
         ],
     },
-    optimization: {
-        minimizer: [
-            new TerserPlugin({
-                extractComments: false,
-                terserOptions: {
-                    format: {
-                        comments: false,
-                    },
-                },
-            }),
-        ],
-    },
+    // optimization: {
+    //     minimizer: [
+    //         new TerserPlugin({
+    //             extractComments: false,
+    //             terserOptions: {
+    //                 format: {
+    //                     comments: false,
+    //                 },
+    //             },
+    //         }),
+    //     ],
+    // },
 
-    experiments: {
-        outputModule: true,
-    },
-    externalsType: 'module',
+    // experiments: {
+    //     outputModule: true,
+    // },
+    // externalsType: 'module',
     externals: {
         '../../../../extensions': 'getContext',
     },
