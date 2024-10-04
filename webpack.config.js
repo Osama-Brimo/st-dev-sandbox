@@ -66,8 +66,23 @@ module.exports = {
         outputModule: true,
     },
     externalsType: 'module',
-    externals: {
-        '@sillytavern/extensions': '../../../../extensions.js',
-    },
+    // externals: {
+    //     '@sillytavern/extensions': '../../../../extensions.js',
+    // },
+    externals: [
+        function ({ context, request }, callback) {
+
+            // throw new Error(`req: ${request}`);
+
+            const regex = /^@sillytavern\/(.+)$/;
+            const match = request.match(regex);
+
+            if (match) {
+                return callback(null, `../../../../${match[1]}`);
+            }
+
+            return callback();
+        },
+    ],
     plugins: [],
 };
