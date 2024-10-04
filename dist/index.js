@@ -1,13 +1,13 @@
-import * as __WEBPACK_EXTERNAL_MODULE__extensions_js_7f975fca__ from "../../../extensions.js";
+import * as __WEBPACK_EXTERNAL_MODULE__extensions_js_e625da88__ from "../../../../extensions.js";
 /******/ var __webpack_modules__ = ({
 
 /***/ "@sillytavern/extensions":
-/*!*****************************************!*\
-  !*** external "../../../extensions.js" ***!
-  \*****************************************/
+/*!********************************************!*\
+  !*** external "../../../../extensions.js" ***!
+  \********************************************/
 /***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__extensions_js_7f975fca__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__extensions_js_e625da88__;
 
 /***/ })
 
