@@ -67,7 +67,7 @@ module.exports = {
     },
     externalsType: 'module',
     externals: {
-        '../../../../extensions': 'getContext',
+        '../../../../extensions.js': 'getContext',
     },
     plugins: [],
 };
