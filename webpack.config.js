@@ -78,7 +78,8 @@ module.exports = {
             const match = request.match(regex);
 
             if (match) {
-                return callback(null, `../../../../${match[1]}`);
+                // TODO: This only matches .js files right now, not indices or different files.
+                return callback(null, `../../../../${match[1]}.js`);
             }
 
             return callback();
