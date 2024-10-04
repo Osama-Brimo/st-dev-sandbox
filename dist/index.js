@@ -1,13 +1,13 @@
-import * as __WEBPACK_EXTERNAL_MODULE_getContext__ from "getContext";
+import * as __WEBPACK_EXTERNAL_MODULE__extensions_f2c2dd90__ from "../../../../extensions";
 /******/ var __webpack_modules__ = ({
 
-/***/ "../../../../extensions.js":
-/*!*****************************!*\
-  !*** external "getContext" ***!
-  \*****************************/
+/***/ "../../../../extensions":
+/*!*****************************************!*\
+  !*** external "../../../../extensions" ***!
+  \*****************************************/
 /***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_getContext__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__extensions_f2c2dd90__;
 
 /***/ })
 
@@ -57,7 +57,7 @@ var __webpack_exports__ = {};
   !*** ./src/index.ts ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _extensions_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../extensions.js */ "../../../../extensions.js");
+/* harmony import */ var _extensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../extensions */ "../../../../extensions");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -72,7 +72,7 @@ jQuery(() => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log('FUUUUUUUCK!!!');
         console.log('[SANDBOX]: Extensions loaded!');
-        console.log('[SANDBOX]: Context...', (0,_extensions_js__WEBPACK_IMPORTED_MODULE_0__.getContext)());
+        console.log('[SANDBOX]: Context...', (0,_extensions__WEBPACK_IMPORTED_MODULE_0__.getContext)());
     }
     catch (error) {
         console.error('[SANDBOX] ERROR:', error);
