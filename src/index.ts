@@ -1,4 +1,4 @@
-import { getContext } from "../../../../extensions";
+import { getContext } from "@sillytavern/extensions";
 
 jQuery(async () => {
     try {

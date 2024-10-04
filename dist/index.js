@@ -1,13 +1,13 @@
-import * as __WEBPACK_EXTERNAL_MODULE__extensions_f2c2dd90__ from "../../../../extensions";
+import * as __WEBPACK_EXTERNAL_MODULE__sillytavern_extensions_8dd54e1f__ from "@sillytavern/extensions";
 /******/ var __webpack_modules__ = ({
 
-/***/ "../../../../extensions":
-/*!*****************************************!*\
-  !*** external "../../../../extensions" ***!
-  \*****************************************/
+/***/ "@sillytavern/extensions":
+/*!******************************************!*\
+  !*** external "@sillytavern/extensions" ***!
+  \******************************************/
 /***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__extensions_f2c2dd90__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__sillytavern_extensions_8dd54e1f__;
 
 /***/ })
 
@@ -57,7 +57,7 @@ var __webpack_exports__ = {};
   !*** ./src/index.ts ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _extensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../extensions */ "../../../../extensions");
+/* harmony import */ var _sillytavern_extensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sillytavern/extensions */ "@sillytavern/extensions");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -72,7 +72,7 @@ jQuery(() => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log('FUUUUUUUCK!!!');
         console.log('[SANDBOX]: Extensions loaded!');
-        console.log('[SANDBOX]: Context...', (0,_extensions__WEBPACK_IMPORTED_MODULE_0__.getContext)());
+        console.log('[SANDBOX]: Context...', (0,_sillytavern_extensions__WEBPACK_IMPORTED_MODULE_0__.getContext)());
     }
     catch (error) {
         console.error('[SANDBOX] ERROR:', error);

@@ -66,8 +66,6 @@ module.exports = {
         outputModule: true,
     },
     externalsType: 'module',
-    externals: {
-        '../../../../extensions': '../../../../extensions',
-    },
+    externals: '@sillytavern/extensions',
     plugins: [],
 };
