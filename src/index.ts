@@ -1,4 +1,4 @@
-import { getContext } from "./utils/test-thing";
+import { getContext } from "../../../../extensions";
 
 jQuery(async () => {
     try {
@@ -9,5 +9,3 @@ jQuery(async () => {
         console.error('[SANDBOX] ERROR:', error);
     }
 });
-
-export {};

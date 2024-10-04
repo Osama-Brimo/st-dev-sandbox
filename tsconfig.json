@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES6",
         "module": "ESNext",
         "outDir": "./out",
         "esModuleInterop": true,
@@ -8,11 +8,16 @@
         "forceConsistentCasingInFileNames": true,
         "allowJs": true,
         "moduleResolution": "node",
+
+    },
+    "parserOptions": {
+        "sourceType": "module",
     },
     "include": [
         "./src/**/*.ts",
     ],
     "exclude": [
+        " ../../../extensions",
         "node_modules",
         "dist",
         "bin"

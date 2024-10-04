@@ -10,6 +10,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.js'],
+        alias: {
+            '@sillytavern': path.resolve(__dirname, '../../..'),
+        },
     },
     module: {
         rules: [
@@ -17,16 +20,17 @@ module.exports = {
                 test: /\.ts$/,
                 exclude: /node_modules/,
                 use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            cacheDirectory: true,
-                            presets: [
-                                '@babel/preset-env',
-                                ['@babel/preset-react', { runtime: 'automatic' }],
-                            ],
-                        },
-                    },
+                    // {
+                    //     loader: 'babel-loader',
+                    //     options: {
+                    //         // cacheDirectory: true,
+                    //         presets: [
+                    //             '@babel/preset-env',
+                    //             // ['@babel/preset-react', { runtime: 'automatic' }],
+                    //         ],
+                    //         sourceType: 'module',
+                    //     },
+                    // },
                     {
                         loader: 'ts-loader',
                     },
@@ -39,6 +43,7 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env'],
+                        sourceType: 'unambiguous',
                     },
                 },
             },
@@ -55,6 +60,17 @@ module.exports = {
                 },
             }),
         ],
+    },
+
+    experiments: {
+        outputModule: true,
+    },
+    externalsType: 'module',
+
+
+
+    externals: {
+        '../../../../extensions': 'SillyTavern.getContext',
     },
     plugins: [],
 };
