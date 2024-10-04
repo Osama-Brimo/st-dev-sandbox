@@ -66,11 +66,8 @@ module.exports = {
         outputModule: true,
     },
     externalsType: 'module',
-
-
-
     externals: {
-        '../../../../extensions': 'SillyTavern.getContext',
+        '../../../../extensions': 'getContext',
     },
     plugins: [],
 };
